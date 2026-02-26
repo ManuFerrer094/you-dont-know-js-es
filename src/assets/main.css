@@ -1,0 +1,272 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========= Theme Variables ========= */
+:root {
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --card: #1a1a1a;
+  --border: #2a2a2a;
+  --yellow: #FFD600;
+  --yellow-hover: #FFE033;
+  --yellow-dim: #B39600;
+  --text: #E8E8E8;
+  --text-muted: #888888;
+  --text-dim: #555555;
+}
+
+.light {
+  --bg: #FAFAF8;
+  --surface: #FFFFFF;
+  --card: #F3F3F0;
+  --border: #E0E0DC;
+  --yellow: #D4A800;
+  --yellow-hover: #B89200;
+  --yellow-dim: #8C6F00;
+  --text: #1a1a1a;
+  --text-muted: #666666;
+  --text-dim: #999999;
+}
+
+/* Sepia theme removed */
+
+/* ========= Scrollbar ========= */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-dim); }
+
+/* ========= Selection ========= */
+::selection {
+  background: var(--yellow);
+  color: #0a0a0a;
+}
+
+/* ========= Smooth Scroll ========= */
+html { scroll-behavior: smooth; }
+
+/* ========= Body ========= */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ========= Prose / Markdown Content ========= */
+.chapter-content {
+  @apply leading-relaxed;
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.chapter-content h1 {
+  @apply text-3xl font-bold mt-12 mb-6;
+  color: var(--text);
+}
+
+.chapter-content h2 {
+  @apply text-2xl font-bold mt-10 mb-5;
+  color: var(--yellow);
+}
+
+.chapter-content h3 {
+  @apply text-xl font-semibold mt-8 mb-4;
+  color: var(--text);
+}
+
+.chapter-content h4 {
+  @apply text-lg font-semibold mt-6 mb-3;
+  color: var(--text-muted);
+}
+
+.chapter-content p {
+  @apply mb-5;
+  color: var(--text);
+}
+
+.chapter-content a {
+  color: var(--yellow);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.chapter-content a:hover {
+  color: var(--yellow-hover);
+}
+
+.chapter-content strong {
+  @apply font-bold;
+  color: var(--text);
+}
+
+.chapter-content em {
+  font-style: italic;
+}
+
+.chapter-content ul, .chapter-content ol {
+  @apply mb-5 pl-6;
+}
+
+.chapter-content ul { list-style-type: disc; }
+.chapter-content ol { list-style-type: decimal; }
+
+.chapter-content li {
+  @apply mb-2;
+}
+
+.chapter-content li::marker {
+  color: var(--yellow);
+}
+
+.chapter-content hr {
+  @apply my-10;
+  border-color: var(--border);
+}
+
+.chapter-content img {
+  @apply my-6 rounded-lg max-w-full;
+}
+
+/* ========= Code Blocks ========= */
+.code-block-wrapper {
+  @apply rounded-xl overflow-hidden my-6;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.code-block-header {
+  @apply flex items-center justify-between px-4 py-2 text-xs font-mono;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
+.code-lang {
+  @apply uppercase tracking-wider font-semibold;
+  color: var(--yellow);
+  font-size: 0.7rem;
+}
+
+.copy-btn {
+  @apply px-3 py-1 rounded-md text-xs font-medium transition-all cursor-pointer;
+  background: var(--border);
+  color: var(--text-muted);
+}
+
+.copy-btn:hover {
+  background: var(--yellow);
+  color: #0a0a0a;
+}
+
+.code-block-wrapper pre {
+  @apply p-5 overflow-x-auto text-sm;
+  background: var(--surface) !important;
+  margin: 0;
+}
+
+.code-block-wrapper code {
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+/* Inline code */
+.chapter-content code:not(pre code) {
+  @apply px-1.5 py-0.5 rounded text-sm font-mono;
+  background: var(--card);
+  color: var(--yellow);
+  border: 1px solid var(--border);
+}
+
+/* ========= Blockquotes ========= */
+.chapter-blockquote {
+  @apply pl-5 my-6 italic;
+  border-left: 3px solid var(--yellow);
+  color: var(--text-muted);
+}
+
+.chapter-blockquote p {
+  color: var(--text-muted) !important;
+}
+
+/* ========= Headings Anchors ========= */
+.heading-anchor {
+  @apply relative;
+}
+
+.anchor-link {
+  @apply absolute -left-6 opacity-0 transition-opacity no-underline;
+  color: var(--yellow) !important;
+  text-decoration: none !important;
+}
+
+.heading-anchor:hover .anchor-link {
+  @apply opacity-100;
+}
+
+/* ========= Highlight.js Custom Dark ========= */
+.hljs {
+  color: #e0e0e0;
+  background: transparent;
+}
+.hljs-keyword { color: #c792ea; }
+.hljs-string { color: #c3e88d; }
+.hljs-number { color: #f78c6c; }
+.hljs-comment { color: #546e7a; font-style: italic; }
+.hljs-function { color: #82aaff; }
+.hljs-title { color: #FFD600; }
+.hljs-params { color: #e0e0e0; }
+.hljs-built_in { color: #ffcb6b; }
+.hljs-literal { color: #ff5370; }
+.hljs-attr { color: #ffcb6b; }
+.hljs-selector-class { color: #ffcb6b; }
+.hljs-selector-tag { color: #ff5370; }
+.hljs-variable { color: #f07178; }
+.hljs-type { color: #FFD600; }
+.hljs-meta { color: #546e7a; }
+
+/* ========= Animations ========= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-16px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-slide-in {
+  animation: slideInLeft 0.3s ease-out;
+}
+
+@keyframes pulse-yellow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 214, 0, 0.3); }
+  50% { box-shadow: 0 0 0 8px rgba(255, 214, 0, 0); }
+}
+
+.animate-pulse-yellow {
+  animation: pulse-yellow 2s ease-in-out infinite;
+}
+
+/* ========= Transition helpers ========= */
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+.slide-fade-leave-active {
+  transition: all 0.2s ease-in;
+}
+.slide-fade-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.slide-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
