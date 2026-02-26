@@ -32,7 +32,10 @@ const currentYear = new Date().getFullYear()
       </nav>
 
       <p class="text-xs" style="color: var(--text-dim);">
-        &copy; {{ currentYear }} Kyle Simpson and Contributors. Built for the Open Web.
+        &copy; {{ currentYear }} Kyle Simpson. Licensed under 
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer">
+          CC BY-NC-ND 4.0
+        </a>. Translation for educational purposes only.
       </p>
     </div>
   </footer>
