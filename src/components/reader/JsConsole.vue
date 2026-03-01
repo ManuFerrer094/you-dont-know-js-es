@@ -47,7 +47,7 @@ watch(
         style="color: var(--text-dim);"
         disabled
       >
-        Notes
+        Notas
       </button>
     </div>
 
@@ -59,8 +59,8 @@ watch(
     >
       <!-- Welcome message -->
       <div v-if="history.length === 0" class="text-xs" style="color: var(--text-dim);">
-        <p class="italic">Interactive JS Sandbox v1.0</p>
-        <p class="mt-2">Type JavaScript and press Enter to execute.</p>
+        <p class="italic">Sandbox JS Interactivo v1.0</p>
+        <p class="mt-2">Escribe JavaScript y pulsa Enter para ejecutar.</p>
       </div>
 
       <!-- History entries -->
@@ -105,7 +105,7 @@ watch(
         ref="inputRef"
         v-model="inputValue"
         type="text"
-        placeholder="Type JS here..."
+        placeholder="Escribe JS aquí..."
         class="flex-1 bg-transparent outline-none font-mono text-sm"
         :style="{ color: 'var(--text)' }"
         autocomplete="off"
@@ -115,7 +115,7 @@ watch(
       <button
         class="w-8 h-8 rounded-lg flex items-center justify-center transition-all hover:scale-110"
         :style="{ background: 'var(--yellow)', color: '#0a0a0a' }"
-        title="Execute"
+        title="Ejecutar"
         @click="execute(inputValue)"
       >
         ▶
@@ -129,7 +129,7 @@ watch(
         :style="{ background: 'var(--card)', color: 'var(--text-dim)' }"
         @click="clear"
       >
-        Clear Console
+        Limpiar Consola
       </button>
     </div>
   </aside>

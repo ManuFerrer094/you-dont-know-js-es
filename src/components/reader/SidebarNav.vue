@@ -25,14 +25,14 @@ function selectBook(book: Book): void {
 }
 
 function chapterLabel(chapter: BookChapter): string {
-  if (chapter.type === 'foreword') return 'Foreword'
-  if (chapter.type === 'preface') return 'Preface'
+  if (chapter.type === 'foreword') return 'Prólogo'
+  if (chapter.type === 'preface') return 'Prefacio'
   if (chapter.type === 'appendix') {
     const letter = chapter.id.replace('ap', '')
-    return `Appendix ${letter.toUpperCase()}`
+    return `Apéndice ${letter.toUpperCase()}`
   }
   const num = chapter.id.replace('ch', '')
-  return `Chapter ${num}`
+  return `Capítulo ${num}`
 }
 </script>
 
@@ -44,13 +44,13 @@ function chapterLabel(chapter: BookChapter): string {
     <!-- Navigation label -->
     <div class="px-5 pt-5 pb-3 flex items-center justify-between">
       <span class="text-xs font-semibold uppercase tracking-widest" style="color: var(--text-muted);">
-        Navigation
+        Navegación
       </span>
       <span
         class="text-xs font-bold px-2 py-0.5 rounded-full"
         :style="{ background: 'rgba(255,214,0,0.15)', color: 'var(--yellow)' }"
       >
-        {{ readingStore.overallProgress }}% Read
+        {{ readingStore.overallProgress }}% Leído
       </span>
     </div>
 

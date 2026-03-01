@@ -4,130 +4,129 @@ export const BOOKS: Book[] = [
   {
     id: 'up-going',
     slug: 'up-going',
-    title: 'Up & Going',
-    shortTitle: 'Up & Going',
+    title: 'Arriba y Andando',
+    shortTitle: 'Arriba y Andando',
     order: 1,
     description:
-      'Start your journey into JavaScript. Learn the basics of programming & the core mechanisms of JS.',
+      'Comienza tu viaje en JavaScript. Aprende los fundamentos de la programación y los mecanismos básicos de JS.',
     color: '#FFD600',
     chapters: [
-      { id: 'foreword', title: 'Foreword', file: 'foreword.md', type: 'foreword' },
-      { id: 'ch1', title: 'Into Programming', file: 'ch1.md', type: 'chapter' },
-      { id: 'ch2', title: 'Into JavaScript', file: 'ch2.md', type: 'chapter' },
-      { id: 'ch3', title: 'Into YDKJS', file: 'ch3.md', type: 'chapter' },
-      { id: 'apA', title: 'Acknowledgments', file: 'apA.md', type: 'appendix' },
+      { id: 'foreword', title: 'Prólogo', files: ['foreword.md'], type: 'foreword' },
+      { id: 'ch1', title: 'Introducción a la Programación', files: ['ch1.md'], type: 'chapter' },
+      { id: 'ch2', title: 'Introducción a JavaScript', files: ['ch2.md'], type: 'chapter' },
+      { id: 'ch3', title: 'Introducción a YDKJS', files: ['ch3.md'], type: 'chapter' },
+      { id: 'apA', title: 'Agradecimientos', files: ['apA.md'], type: 'appendix' },
     ],
   },
   {
     id: 'scope-closures',
     slug: 'scope-closures',
-    title: 'Scope & Closures',
-    shortTitle: 'Scope & Closures',
+    title: 'Scope y Closures',
+    shortTitle: 'Scope y Closures',
     order: 2,
     description:
-      'Understand lexical scope, closures, modules, and the scope chain that governs variable access.',
+      'Comprende el scope léxico, los closures, los módulos y la cadena de scope que gobierna el acceso a variables.',
     color: '#FF6B35',
     chapters: [
-      { id: 'foreword', title: 'Foreword', file: 'foreword.md', type: 'foreword' },
-      { id: 'ch1', title: 'What is Scope?', file: 'ch1.md', type: 'chapter' },
-      { id: 'ch2', title: 'Lexical Scope', file: 'ch2.md', type: 'chapter' },
-      { id: 'ch3', title: 'Function vs. Block Scope', file: 'ch3.md', type: 'chapter' },
-      { id: 'ch4', title: 'Hoisting', file: 'ch4.md', type: 'chapter' },
-      { id: 'ch5', title: 'Scope Closures', file: 'ch5.md', type: 'chapter' },
-      { id: 'apA', title: 'Dynamic Scope', file: 'apA.md', type: 'appendix' },
-      { id: 'apB', title: 'Polyfilling Block Scope', file: 'apB.md', type: 'appendix' },
-      { id: 'apC', title: 'Lexical-this', file: 'apC.md', type: 'appendix' },
-      { id: 'apD', title: 'Acknowledgments', file: 'apD.md', type: 'appendix' },
+      { id: 'ch1', title: '¿Qué es el Scope?', files: ['ch1.md'], type: 'chapter' },
+      { id: 'ch2', title: 'Scope Léxico', files: ['ch2.md'], type: 'chapter' },
+      { id: 'ch3', title: 'Scope de Función vs. de Bloque', files: ['ch3.md'], type: 'chapter' },
+      { id: 'ch4', title: 'Hoisting', files: ['ch4.md'], type: 'chapter' },
+      { id: 'ch5', title: 'Scope y Closures', files: ['ch5.md'], type: 'chapter' },
+      { id: 'apA', title: 'Scope Dinámico', files: ['apA.md'], type: 'appendix' },
+      { id: 'apB', title: 'Polyfilling del Scope de Bloque', files: ['apB.md'], type: 'appendix' },
+      { id: 'apC', title: '`this` Léxico', files: ['apC.md'], type: 'appendix' },
+      { id: 'apD', title: 'Agradecimientos', files: ['apD.md'], type: 'appendix' },
     ],
   },
   {
     id: 'this-object-prototypes',
     slug: 'this-object-prototypes',
-    title: 'this & Object Prototypes',
-    shortTitle: 'this & Prototypes',
+    title: 'this y Prototipos de Objetos',
+    shortTitle: 'this y Prototipos',
     order: 3,
     description:
-      'Demystify the this keyword, object mechanics, prototypal inheritance, and behavior delegation.',
+      'Desmitifica la palabra clave this, la mecánica de objetos, la herencia prototípica y la delegación de comportamiento.',
     color: '#4ECDC4',
     chapters: [
-      { id: 'foreword', title: 'Foreword', file: 'foreword.md', type: 'foreword' },
-      { id: 'ch1', title: 'this Or That?', file: 'ch1.md', type: 'chapter' },
-      { id: 'ch2', title: 'this All Makes Sense Now!', file: 'ch2.md', type: 'chapter' },
-      { id: 'ch3', title: 'Objects', file: 'ch3.md', type: 'chapter' },
-      { id: 'ch4', title: 'Mixing (Up) "Class" Objects', file: 'ch4.md', type: 'chapter' },
-      { id: 'ch5', title: 'Prototypes', file: 'ch5.md', type: 'chapter' },
-      { id: 'ch6', title: 'Behavior Delegation', file: 'ch6.md', type: 'chapter' },
-      { id: 'apA', title: 'ES6 class', file: 'apA.md', type: 'appendix' },
-      { id: 'apB', title: 'Acknowledgments', file: 'apB.md', type: 'appendix' },
+      { id: 'foreword', title: 'Prólogo', files: ['foreword.md'], type: 'foreword' },
+      { id: 'ch1', title: '¿`this` O Eso?', files: ['ch1.md'], type: 'chapter' },
+      { id: 'ch2', title: '¡`this` Ahora Todo Tiene Sentido!', files: ['ch2-1.md', 'ch2-2.md'], type: 'chapter' },
+      { id: 'ch3', title: 'Objetos', files: ['ch3-1.md', 'ch3-2.md'], type: 'chapter' },
+      { id: 'ch4', title: 'Mezclando Objetos "Clase"', files: ['ch4.md'], type: 'chapter' },
+      { id: 'ch5', title: 'Prototipos', files: ['ch5-1.md', 'ch5-2.md'], type: 'chapter' },
+      { id: 'ch6', title: 'Delegación de Comportamiento', files: ['ch6-1.md', 'ch6-2.md'], type: 'chapter' },
+      { id: 'apA', title: '`class` en ES6', files: ['apA.md'], type: 'appendix' },
+      { id: 'apB', title: 'Agradecimientos', files: ['apB.md'], type: 'appendix' },
     ],
   },
   {
     id: 'types-grammar',
     slug: 'types-grammar',
-    title: 'Types & Grammar',
-    shortTitle: 'Types & Grammar',
+    title: 'Tipos y Gramática',
+    shortTitle: 'Tipos y Gramática',
     order: 4,
     description:
-      'Explore the type system, coercion, natives, and the grammar rules that every JS dev should know.',
+      'Explora el sistema de tipos, la coerción, los nativos y las reglas gramaticales que todo desarrollador JS debe conocer.',
     color: '#A78BFA',
     chapters: [
-      { id: 'foreword', title: 'Foreword', file: 'foreword.md', type: 'foreword' },
-      { id: 'ch1', title: 'Types', file: 'ch1.md', type: 'chapter' },
-      { id: 'ch2', title: 'Values', file: 'ch2.md', type: 'chapter' },
-      { id: 'ch3', title: 'Natives', file: 'ch3.md', type: 'chapter' },
-      { id: 'ch4', title: 'Coercion', file: 'ch4.md', type: 'chapter' },
-      { id: 'ch5', title: 'Grammar', file: 'ch5.md', type: 'chapter' },
-      { id: 'apA', title: 'Mixed Environment JavaScript', file: 'apA.md', type: 'appendix' },
-      { id: 'apB', title: 'Acknowledgments', file: 'apB.md', type: 'appendix' },
+      { id: 'foreword', title: 'Prólogo', files: ['foreword.md'], type: 'foreword' },
+      { id: 'ch1', title: 'Tipos', files: ['ch1.md'], type: 'chapter' },
+      { id: 'ch2', title: 'Valores', files: ['ch2-1.md', 'ch2-2.md'], type: 'chapter' },
+      { id: 'ch3', title: 'Nativos', files: ['ch3.md'], type: 'chapter' },
+      { id: 'ch4', title: 'Coerción', files: ['ch4-1.md', 'ch4-2.md', 'ch4-3.md'], type: 'chapter' },
+      { id: 'ch5', title: 'Gramática', files: ['ch5-1.md', 'ch5-2.md'], type: 'chapter' },
+      { id: 'apA', title: 'JavaScript en Entornos Mixtos', files: ['apA.md'], type: 'appendix' },
+      { id: 'apB', title: 'Agradecimientos', files: ['apB.md'], type: 'appendix' },
     ],
   },
   {
     id: 'async-performance',
     slug: 'async-performance',
-    title: 'Async & Performance',
-    shortTitle: 'Async & Perf',
+    title: 'Async y Rendimiento',
+    shortTitle: 'Async y Rend.',
     order: 5,
     description:
-      'Master asynchrony with callbacks, promises, generators, and learn performance optimization.',
+      'Domina la asincronía con callbacks, promesas, generadores y aprende optimización del rendimiento.',
     color: '#F472B6',
     chapters: [
-      { id: 'foreword', title: 'Foreword', file: 'foreword.md', type: 'foreword' },
-      { id: 'ch1', title: 'Asynchrony: Now & Later', file: 'ch1.md', type: 'chapter' },
-      { id: 'ch2', title: 'Callbacks', file: 'ch2.md', type: 'chapter' },
-      { id: 'ch3', title: 'Promises', file: 'ch3.md', type: 'chapter' },
-      { id: 'ch4', title: 'Generators', file: 'ch4.md', type: 'chapter' },
-      { id: 'ch5', title: 'Program Performance', file: 'ch5.md', type: 'chapter' },
-      { id: 'ch6', title: 'Benchmarking & Tuning', file: 'ch6.md', type: 'chapter' },
-      { id: 'apA', title: 'asynquence Library', file: 'apA.md', type: 'appendix' },
-      { id: 'apB', title: 'Advanced Async Patterns', file: 'apB.md', type: 'appendix' },
-      { id: 'apC', title: 'Acknowledgments', file: 'apC.md', type: 'appendix' },
+      { id: 'foreword', title: 'Prólogo', files: ['foreword.md'], type: 'foreword' },
+      { id: 'ch1', title: 'Asincronía: Ahora y Después', files: ['ch1.md'], type: 'chapter' },
+      { id: 'ch2', title: 'Callbacks', files: ['ch2.md'], type: 'chapter' },
+      { id: 'ch3', title: 'Promesas', files: ['ch3-1.md', 'ch3-2.md', 'ch3-3.md'], type: 'chapter' },
+      { id: 'ch4', title: 'Generadores', files: ['ch4-1.md', 'ch4-2.md', 'ch4-3.md'], type: 'chapter' },
+      { id: 'ch5', title: 'Rendimiento del Programa', files: ['ch5.md'], type: 'chapter' },
+      { id: 'ch6', title: 'Benchmarking y Optimización', files: ['ch6.md'], type: 'chapter' },
+      { id: 'apA', title: 'Biblioteca asynquence', files: ['apA-1.md', 'apA-2.md'], type: 'appendix' },
+      { id: 'apB', title: 'Patrones Asíncronos Avanzados', files: ['apB-1.md', 'apB-2.md'], type: 'appendix' },
+      { id: 'apC', title: 'Agradecimientos', files: ['apC.md'], type: 'appendix' },
     ],
   },
   {
     id: 'es6-beyond',
     slug: 'es6-beyond',
-    title: 'ES6 & Beyond',
-    shortTitle: 'ES6 & Beyond',
+    title: 'ES6 y Más Allá',
+    shortTitle: 'ES6 y Más Allá',
     order: 6,
     description:
-      'Explore the new features of ES6+: destructuring, classes, modules, proxies, and more.',
+      'Explora las nuevas características de ES6+: desestructuración, clases, módulos, proxies y más.',
     color: '#34D399',
     chapters: [
-      { id: 'foreword', title: 'Foreword', file: 'foreword.md', type: 'foreword' },
-      { id: 'ch1', title: 'ES? Now & Future', file: 'ch1.md', type: 'chapter' },
-      { id: 'ch2', title: 'Syntax', file: 'ch2.md', type: 'chapter' },
-      { id: 'ch3', title: 'Organization', file: 'ch3.md', type: 'chapter' },
-      { id: 'ch4', title: 'Async Flow Control', file: 'ch4.md', type: 'chapter' },
-      { id: 'ch5', title: 'Collections', file: 'ch5.md', type: 'chapter' },
-      { id: 'ch6', title: 'API Additions', file: 'ch6.md', type: 'chapter' },
-      { id: 'ch7', title: 'Meta Programming', file: 'ch7.md', type: 'chapter' },
-      { id: 'ch8', title: 'Beyond ES6', file: 'ch8.md', type: 'chapter' },
-      { id: 'apA', title: 'Acknowledgments', file: 'apA.md', type: 'appendix' },
+      { id: 'foreword', title: 'Prólogo', files: ['foreword.md'], type: 'foreword' },
+      { id: 'ch1', title: '¿ES? Ahora y Futuro', files: ['ch1.md'], type: 'chapter' },
+      { id: 'ch2', title: 'Sintaxis', files: ['ch2-1.md', 'ch2-2.md', 'ch2-3.md', 'ch2-4.md', 'ch2-5.md'], type: 'chapter' },
+      { id: 'ch3', title: 'Organización', files: ['ch3-1.md', 'ch3-2.md', 'ch3-3.md', 'ch3-4.md'], type: 'chapter' },
+      { id: 'ch4', title: 'Control de Flujo Asíncrono', files: ['ch4.md'], type: 'chapter' },
+      { id: 'ch5', title: 'Colecciones', files: ['ch5.md'], type: 'chapter' },
+      { id: 'ch6', title: 'Adiciones a la API', files: ['ch6-1.md', 'ch6-2.md'], type: 'chapter' },
+      { id: 'ch7', title: 'Meta Programación', files: ['ch7-1.md', 'ch7-2.md'], type: 'chapter' },
+      { id: 'ch8', title: 'Más Allá de ES6', files: ['ch8.md'], type: 'chapter' },
+      { id: 'apA', title: 'Agradecimientos', files: ['apA.md'], type: 'appendix' },
     ],
   },
 ]
 
-/** Map book slug to the actual folder name inside texts/ */
+/** Map book slug to the actual folder name inside texts_es/ */
 const FOLDER_MAP: Record<string, string> = {
   'up-going': 'up & going',
   'scope-closures': 'scope & closures',
@@ -139,16 +138,16 @@ const FOLDER_MAP: Record<string, string> = {
 
 /**
  * All markdown files lazily loaded at build time via Vite glob import.
- * Keys are like "/texts/up & going/ch1.md" → () => Promise<string>.
+ * Keys are like "/texts_es/up & going/ch1.md" → () => Promise<string>.
  */
 const markdownModules = import.meta.glob<string>(
   [
-    '/texts/up & going/*.md',
-    '/texts/scope & closures/*.md',
-    '/texts/this & object prototypes/*.md',
-    '/texts/types & grammar/*.md',
-    '/texts/async & performance/*.md',
-    '/texts/es6 & beyond/*.md',
+    '/texts_es/up & going/*.md',
+    '/texts_es/scope & closures/*.md',
+    '/texts_es/this & object prototypes/*.md',
+    '/texts_es/types & grammar/*.md',
+    '/texts_es/async & performance/*.md',
+    '/texts_es/es6 & beyond/*.md',
     '/preface.md',
   ],
   { query: '?raw', import: 'default', eager: false },
@@ -168,11 +167,17 @@ export async function getChapterContent(bookSlug: string, chapterId: string): Pr
   const chapter = book.chapters.find((c) => c.id === chapterId)
   if (!chapter) return null
 
-  const key = `/texts/${folder}/${chapter.file}`
-  const loader = markdownModules[key]
-  if (!loader) return null
+  const parts = await Promise.all(
+    chapter.files.map((file) => {
+      const key = `/texts_es/${folder}/${file}`
+      const loader = markdownModules[key]
+      if (!loader) return Promise.resolve('')
+      return loader()
+    }),
+  )
 
-  return loader()
+  const content = parts.filter(Boolean).join('\n\n')
+  return content || null
 }
 
 export async function getPrefaceContent(): Promise<string | null> {

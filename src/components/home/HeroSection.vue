@@ -35,18 +35,18 @@ function exploreLibrary(): void {
           :style="{ background: 'rgba(255, 214, 0, 0.1)', color: 'var(--yellow)' }"
         >
           <span class="w-2 h-2 rounded-full animate-pulse-yellow" style="background: var(--yellow);"></span>
-          Interactive Edition
+          Edición Interactiva
         </div>
 
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6" style="color: var(--text);">
-          Deep Dive into<br/>
+          Sumérgete en<br/>
           <span style="color: var(--yellow);" class="italic font-serif">JavaScript</span>
         </h1>
 
         <p class="text-lg mb-8 max-w-lg" style="color: var(--text-muted);">
-          Master the core mechanics of the language with the world-renowned
-          "You Don't Know JS" series, now in a high-end digital reading experience
-          engineered for the modern developer.
+          Domina los mecanismos internos del lenguaje con la reconocida serie
+          "No Sabes JS", ahora en una experiencia de lectura digital de alta calidad
+          diseñada para el desarrollador moderno.
         </p>
 
         <div class="flex flex-wrap gap-4">
@@ -55,14 +55,14 @@ function exploreLibrary(): void {
             style="background: var(--yellow); color: #0a0a0a;"
             @click="startReading"
           >
-            Start Reading Free
+            Empezar a Leer Gratis
           </button>
           <button
             class="px-7 py-3.5 rounded-xl font-semibold text-sm border transition-all hover:scale-105 active:scale-95"
             :style="{ borderColor: 'var(--border)', color: 'var(--text)', background: 'transparent' }"
             @click="exploreLibrary"
           >
-            Explore Library
+            Explorar Biblioteca
           </button>
         </div>
       </div>
@@ -78,9 +78,9 @@ function exploreLibrary(): void {
           </div>
           <div>
             <h2 class="text-lg font-black uppercase text-black/80 leading-tight">
-              You Don't Know JavaScript Yet
+              No Sabes JavaScript
             </h2>
-            <p class="text-sm text-black/50 mt-1">Get Started — 2nd Edition</p>
+            <p class="text-sm text-black/50 mt-1">Arriba y Andando — 1ª Edición</p>
             <div class="mt-4 flex items-center justify-between">
               <span class="text-xs font-bold text-black/60 uppercase tracking-wider">Kyle Simpson</span>
               <span class="text-black/40">→</span>

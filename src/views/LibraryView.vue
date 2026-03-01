@@ -12,25 +12,25 @@ function openChapter(bookSlug: string, chapterId: string): void {
 }
 
 function chapterLabel(type: string, id: string): string {
-  if (type === 'foreword') return 'Foreword'
-  if (type === 'preface') return 'Preface'
-  if (type === 'appendix') return `Appendix ${id.replace('ap', '').toUpperCase()}`
-  return `Ch ${id.replace('ch', '')}`
+  if (type === 'foreword') return 'Prólogo'
+  if (type === 'preface') return 'Prefacio'
+  if (type === 'appendix') return `Apéndice ${id.replace('ap', '').toUpperCase()}`
+  return `Cap ${id.replace('ch', '')}`
 }
 </script>
 
 <template>
   <div class="min-h-screen pt-14">
     <div class="max-w-6xl mx-auto px-6 py-12">
-      <h1 class="text-3xl md:text-4xl font-black mb-2" style="color: var(--text);">Library</h1>
+      <h1 class="text-3xl md:text-4xl font-black mb-2" style="color: var(--text);">Biblioteca</h1>
       <p class="mb-10" style="color: var(--text-muted);">
-        Browse the complete "You Don't Know JS" series. Track your progress across all six books.
+        Explora la serie completa "No Sabes JS". Sigue tu progreso en los seis libros.
       </p>
 
       <!-- Overall progress -->
       <div class="mb-12 p-6 rounded-2xl border" :style="{ background: 'var(--card)', borderColor: 'var(--border)' }">
         <div class="flex items-center justify-between mb-3">
-          <span class="font-semibold" style="color: var(--text);">Overall Progress</span>
+          <span class="font-semibold" style="color: var(--text);">Progreso General</span>
           <span class="text-sm font-bold" style="color: var(--yellow);">{{ readingStore.overallProgress }}%</span>
         </div>
         <div class="h-2 rounded-full overflow-hidden" :style="{ background: 'var(--border)' }">
@@ -40,7 +40,7 @@ function chapterLabel(type: string, id: string): string {
           ></div>
         </div>
         <div class="flex justify-between mt-2 text-xs" style="color: var(--text-dim);">
-          <span>{{ readingStore.completedChapters }} chapters completed</span>
+          <span>{{ readingStore.completedChapters }} capítulos completados</span>
           <span>{{ readingStore.totalChapters }} total</span>
         </div>
       </div>
