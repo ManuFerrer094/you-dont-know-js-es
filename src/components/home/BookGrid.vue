@@ -15,10 +15,10 @@ function openBook(bookSlug: string): void {
   <section class="py-20 px-6">
     <div class="max-w-7xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-black mb-4 text-center" style="color: var(--text);">
-        The Complete Series
+        La Serie Completa
       </h2>
       <p class="text-center mb-12 max-w-xl mx-auto" style="color: var(--text-muted);">
-        Six books. One mission. Truly understand JavaScript from the inside out.
+        Seis libros. Una misión. Comprender JavaScript de verdad, desde dentro.
       </p>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -41,7 +41,7 @@ function openBook(bookSlug: string): void {
               {{ book.order }}
             </span>
             <span class="text-xs font-medium" style="color: var(--text-dim);">
-              {{ book.chapters.length }} chapters
+              {{ book.chapters.length }} capítulos
             </span>
           </div>
 
@@ -70,13 +70,13 @@ function openBook(bookSlug: string): void {
           </div>
           <div class="flex items-center justify-between mt-2">
             <span class="text-xs" style="color: var(--text-dim);">
-              {{ readingStore.bookProgress(book.slug) }}% complete
+              {{ readingStore.bookProgress(book.slug) }}% completado
             </span>
             <span
               class="text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity"
               :style="{ color: book.color }"
             >
-              Read →
+              Leer →
             </span>
           </div>
         </button>

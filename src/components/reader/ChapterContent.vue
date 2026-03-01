@@ -28,14 +28,14 @@ const prevChapter = computed(() => getPrevChapter(bookSlug.value, chapterId.valu
 
 const breadcrumbBook = computed(() => {
   if (!book.value) return ''
-  return `Book ${book.value.order}`
+  return `Libro ${book.value.order}`
 })
 
 const breadcrumbChapter = computed(() => {
   if (!chapter.value) return ''
-  if (chapter.value.type === 'foreword') return 'Foreword'
-  if (chapter.value.type === 'appendix') return `Appendix ${chapter.value.id.replace('ap', '').toUpperCase()}`
-  return `Chapter ${chapter.value.id.replace('ch', '')}`
+  if (chapter.value.type === 'foreword') return 'Prólogo'
+  if (chapter.value.type === 'appendix') return `Apéndice ${chapter.value.id.replace('ap', '').toUpperCase()}`
+  return `Capítulo ${chapter.value.id.replace('ch', '')}`
 })
 
 function handleScroll(): void {
@@ -115,7 +115,7 @@ onUnmounted(() => {
       <!-- Not found -->
       <div v-else class="text-center py-20">
         <p class="text-xl" style="color: var(--text-muted);">
-          Chapter not found
+          Capítulo no encontrado
         </p>
       </div>
 
@@ -128,7 +128,7 @@ onUnmounted(() => {
           @click="goToChapter(prevChapter)"
         >
           <span class="text-xs uppercase tracking-wider block mb-1" style="color: var(--text-dim);">
-            Previous
+            Anterior
           </span>
           <span class="font-semibold text-sm" style="color: var(--text);">
             {{ prevChapter.chapterTitle }}
@@ -142,7 +142,7 @@ onUnmounted(() => {
           @click="goToChapter(nextChapter)"
         >
           <span class="text-xs uppercase tracking-wider block mb-1" style="color: var(--text-dim);">
-            Next Chapter
+            Siguiente Capítulo
           </span>
           <span class="font-semibold text-sm" style="color: var(--text);">
             {{ nextChapter.chapterTitle }}

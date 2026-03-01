@@ -44,7 +44,7 @@ function continueReading(): void {
         JS
       </div>
       <span class="font-bold text-sm tracking-wide hidden sm:inline" style="color: var(--text);">
-        YDKJS <span style="color: var(--text-muted);" class="font-normal">ONLINE</span>
+        No Sabes <span style="color: var(--text-muted);" class="font-normal">JS</span>
       </span>
     </div>
 
@@ -55,21 +55,21 @@ function continueReading(): void {
         class="transition-colors hover:opacity-100"
         :style="{ color: route.name === 'home' ? 'var(--yellow)' : 'var(--text-muted)' }"
       >
-        Books
+        Libros
       </router-link>
       <router-link
         :to="{ name: 'library' }"
         class="transition-colors hover:opacity-100"
         :style="{ color: route.name === 'library' ? 'var(--yellow)' : 'var(--text-muted)' }"
       >
-        Library
+        Biblioteca
       </router-link>
       <button
         class="transition-colors hover:opacity-100"
         :style="{ color: 'var(--text-muted)' }"
         @click="continueReading"
       >
-        Continue Reading
+        Continuar Leyendo
       </button>
     </nav>
 
@@ -86,7 +86,7 @@ function continueReading(): void {
             background: theme === t ? 'var(--yellow)' : 'transparent',
             color: theme === t ? '#0a0a0a' : 'var(--text-muted)',
           }"
-          :title="`${t} theme`"
+          :title="`Tema ${t === 'dark' ? 'oscuro' : 'claro'}`"
           @click="setTheme(t)"
         >
           {{ themeIcons[t] }}
@@ -99,7 +99,7 @@ function continueReading(): void {
         class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-medium"
         :style="{ background: 'var(--card)', color: 'var(--yellow)' }"
       >
-        <span>{{ readingStore.overallProgress }}% Read</span>
+        <span>{{ readingStore.overallProgress }}% Leído</span>
       </div>
     </div>
   </header>

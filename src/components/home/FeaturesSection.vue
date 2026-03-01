@@ -8,23 +8,23 @@ interface Feature {
 const features: Feature[] = [
   {
     icon: '♿',
-    title: 'WCAG AAA Compliance',
-    description: 'Full accessibility support including screen reader optimizations and high contrast modes for all users.',
+    title: 'Cumplimiento WCAG AAA',
+    description: 'Soporte completo de accesibilidad incluyendo optimizaciones para lectores de pantalla y modos de alto contraste para todos los usuarios.',
   },
   {
     icon: '🎨',
-    title: 'Custom Themes',
-    description: 'Personalize your reading with Light and Dark themes. Adjust typography and spacing to your preference.',
+    title: 'Temas Personalizados',
+    description: 'Personaliza tu lectura con temas Claro y Oscuro. Ajusta la tipografía y el espaciado a tu preferencia.',
   },
   {
     icon: '🔄',
-    title: 'Seamless Tracking',
-    description: 'Cloud-synced progress across all devices. Pick up exactly where you left off, whether on mobile or desktop.',
+    title: 'Seguimiento Continuo',
+    description: 'Progreso sincronizado en la nube en todos tus dispositivos. Retoma exactamente donde lo dejaste, ya sea en móvil o escritorio.',
   },
   {
     icon: '💻',
-    title: 'Interactive Snippets',
-    description: "Don't just read code—run it. Every snippet is an interactive sandbox where you can experiment in real-time.",
+    title: 'Fragmentos Interactivos',
+    description: 'No solo leas código, ejecútalo. Cada fragmento es un sandbox interactivo donde puedes experimentar en tiempo real.',
   },
 ]
 </script>

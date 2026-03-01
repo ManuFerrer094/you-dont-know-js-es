@@ -5,9 +5,9 @@ interface StatItem {
 }
 
 const stats: StatItem[] = [
-  { value: '6', label: 'Core Titles' },
-  { value: '2,000+', label: 'Code Snippets' },
-  { value: '100%', label: 'Interactive' },
+  { value: '6', label: 'Títulos Principales' },
+  { value: '2,000+', label: 'Fragmentos de Código' },
+  { value: '100%', label: 'Interactivo' },
 ]
 </script>
 

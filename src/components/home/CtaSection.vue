@@ -18,18 +18,18 @@ function startReading(): void {
 <template>
   <section class="py-24 px-6 text-center">
     <h2 class="text-3xl md:text-5xl font-black mb-4" style="color: var(--text);">
-      Ready to Master the<br/>Language?
+      ¿Listo para Dominar<br/>el Lenguaje?
     </h2>
     <p class="mb-8 max-w-lg mx-auto" style="color: var(--text-muted);">
-      Join thousands of developers who have elevated their careers by truly understanding
-      how JavaScript works under the hood.
+      Únete a miles de desarrolladores que han impulsado sus carreras comprendiendo verdaderamente
+      cómo funciona JavaScript por dentro.
     </p>
     <button
       class="px-8 py-4 rounded-xl font-bold text-base transition-all hover:scale-105 active:scale-95"
       style="background: var(--yellow); color: #0a0a0a;"
       @click="startReading"
     >
-      Start Reading Free
+      Empezar a Leer Gratis
     </button>
   </section>
 </template>

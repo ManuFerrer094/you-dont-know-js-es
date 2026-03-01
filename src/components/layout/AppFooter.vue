@@ -13,7 +13,7 @@ const currentYear = new Date().getFullYear()
           JS
         </div>
         <span class="text-sm font-medium" style="color: var(--text-muted);">
-          YDKJS <span class="font-normal">ONLINE</span>
+          No Sabes <span class="font-normal">JS</span>
         </span>
       </div>
 
@@ -27,15 +27,15 @@ const currentYear = new Date().getFullYear()
         >
           GitHub
         </a>
-        <span>Privacy</span>
-        <span>Terms</span>
+        <span>Privacidad</span>
+        <span>Términos</span>
       </nav>
 
       <p class="text-xs" style="color: var(--text-dim);">
-        &copy; {{ currentYear }} Kyle Simpson. Licensed under 
+        &copy; {{ currentYear }} Kyle Simpson. Licenciado bajo 
         <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer">
           CC BY-NC-ND 4.0
-        </a>. Translation for educational purposes only.
+        </a>. Traducción solo con fines educativos.
       </p>
     </div>
   </footer>

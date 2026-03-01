@@ -1,7 +1,7 @@
 export interface BookChapter {
   id: string
   title: string
-  file: string
+  files: string[]
   type: 'foreword' | 'preface' | 'chapter' | 'appendix'
 }
 
