@@ -177,7 +177,14 @@ export async function getChapterContent(bookSlug: string, chapterId: string): Pr
   )
 
   const content = parts.filter(Boolean).join('\n\n')
-  return content || null
+  if (!content) return null
+
+  // Rewrite relative image src paths to absolute public asset paths
+  const fixedContent = content.replace(
+    /src="(?!https?:\/\/|\/|data:)([^"]+)"/g,
+    `src="/texts/${bookSlug}/$1"`,
+  )
+  return fixedContent
 }
 
 export async function getPrefaceContent(): Promise<string | null> {
