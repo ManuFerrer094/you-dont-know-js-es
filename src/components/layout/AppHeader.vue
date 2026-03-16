@@ -3,11 +3,10 @@ import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useTheme } from '@/composables/useTheme'
 import { useReadingStore } from '@/stores/reading'
-import type { ThemeMode } from '@/types/book'
 
 const route = useRoute()
 const router = useRouter()
-const { theme, setTheme, cycleTheme } = useTheme()
+const { theme, cycleTheme } = useTheme()
 const readingStore = useReadingStore()
 
 const isReader = computed(() => route.name === 'reader')
