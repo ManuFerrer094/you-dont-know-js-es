@@ -14,21 +14,16 @@ const showConsole = computed(() => readingStore.consoleOpen)
   <div class="flex pt-14 h-screen overflow-hidden">
     <!-- Toggle sidebar button (mobile) -->
     <button
-      class="fixed bottom-4 left-4 z-50 lg:hidden w-12 h-12 rounded-full shadow-lg flex items-center justify-center"
+      class="fixed bottom-4 right-4 z-50 lg:hidden w-12 h-12 rounded-full shadow-lg flex items-center justify-center"
       :style="{ background: 'var(--yellow)', color: '#0a0a0a' }"
       @click="readingStore.toggleSidebar()"
+      aria-label="Abrir menú"
     >
       ☰
     </button>
 
     <!-- Toggle console button (mobile) -->
-    <button
-      class="fixed bottom-4 right-4 z-50 lg:hidden w-12 h-12 rounded-full shadow-lg flex items-center justify-center"
-      :style="{ background: 'var(--yellow)', color: '#0a0a0a' }"
-      @click="readingStore.toggleConsole()"
-    >
-      >_
-    </button>
+    <!-- Removed unused console toggle button (mobile) -->
 
     <!-- Sidebar overlay (mobile) -->
     <div
